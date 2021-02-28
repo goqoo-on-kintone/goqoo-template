@@ -1,6 +1,6 @@
 module.exports = {
   env: { browser: true },
-  extends: ['standard', 'plugin:import/errors', 'plugin:vue/base', 'prettier', 'prettier/standard'],
+  extends: ['standard', 'plugin:import/errors', 'plugin:vue/base', 'prettier'],
   plugins: ['prettier'],
   globals: { kintone: true },
   parserOptions: { ecmaVersion: 2019 },
