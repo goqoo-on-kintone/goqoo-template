@@ -52,7 +52,7 @@ const config = {
         test: /\.js$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
-        query: {
+        options: {
           presets: [
             [
               '@babel/preset-env',
@@ -71,7 +71,7 @@ const config = {
       },
       {
         test: /\.css$/,
-        loader: ['style-loader', 'css-loader'],
+        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
       },
       {
         test: /\.scss$/,
