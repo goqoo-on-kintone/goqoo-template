@@ -4,16 +4,17 @@
   border-width: 0;
 }
 
-$theme-colors: (
-  'primary': #3498da,
-);
-
-// Bootstrap
 @import '~bootstrap/scss/bootstrap';
-
 @import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins';
+
+// Bootstrapテーマカラーのカスタマイズ
+$kintone-primary-color: rgba(52, 152, 219, 0.6);
+$custom-colors: (
+  'primary': $kintone-primary-color,
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
 
 // グリッドだけはdivタグの外で有効化
 @import '~bootstrap/scss/grid';
