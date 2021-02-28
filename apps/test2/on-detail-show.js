@@ -1,3 +1,3 @@
-kintone.events.on('app.record.detail.show', event => {
+kintone.events.on('app.record.detail.show', (event) => {
   return event
 })

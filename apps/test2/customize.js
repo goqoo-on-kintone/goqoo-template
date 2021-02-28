@@ -5,7 +5,7 @@ import './customize.scss'
 import fieldMap from './fieldMap.json'
 import img from '../../.goqoo/img/SmallLogo.jpg'
 
-export default event => {
+export default (event) => {
   if (event.viewName !== 'カスタマイズビュー') {
     return
   }
