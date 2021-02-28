@@ -5,14 +5,14 @@ const path = require('path')
 // TODO: 設定ファイルで変更できるようにしたい
 const RETRY_LIMIT = 60
 
-const sleep = milliSec => new Promise(resolve => setTimeout(resolve, milliSec))
+const sleep = (milliSec) => new Promise((resolve) => setTimeout(resolve, milliSec))
 module.exports = class DropboxKintone {
-  constructor ({ accessToken, localRootDir }) {
+  constructor({ accessToken, localRootDir }) {
     this.dbx = new Dropbox({ accessToken })
     this.localRootDir = localRootDir
   }
 
-  async fetchSharedLink (filePath, retryCount = 0) {
+  async fetchSharedLink(filePath, retryCount = 0) {
     try {
       const { url } = await this.dbx.sharingCreateSharedLink({ path: filePath })
       return {
@@ -34,7 +34,7 @@ module.exports = class DropboxKintone {
     }
   }
 
-  async fetchSharedLinks (filePaths) {
-    return Promise.all(filePaths.map(filePath => this.fetchSharedLink(filePath)))
+  async fetchSharedLinks(filePaths) {
+    return Promise.all(filePaths.map((filePath) => this.fetchSharedLink(filePath)))
   }
 }

@@ -35,8 +35,8 @@ if (useDropbox) {
       accessToken: dropbox.token,
       localRootDir: dropbox.rootDir,
     })
-    const dbxOutputPaths = apps.map(appName => `/${outputDir}/${appName}.js`)
-    dbxKintone.fetchSharedLinks(dbxOutputPaths).then(paths => {
+    const dbxOutputPaths = apps.map((appName) => `/${outputDir}/${appName}.js`)
+    dbxKintone.fetchSharedLinks(dbxOutputPaths).then((paths) => {
       console.log(JSON.stringify(paths, null, '  '))
     })
   }
@@ -82,7 +82,7 @@ const config = {
             // Loader for webpack to process CSS with PostCSS
             loader: 'postcss-loader',
             options: {
-              plugins: function() {
+              plugins: function () {
                 return [require('autoprefixer')]
               },
             },
@@ -119,7 +119,7 @@ if (process.env.S3) {
     obj[`${key}-${process.env.AWS_RANDOM_SUFFIX}`] = value
     return obj
   }, {})
-  ;['AWS_ACCESS_KEY_ID', 'AWS_SECRET_ACCESS_KEY', 'AWS_S3_REGION', 'AWS_S3_BUCKET'].forEach(variable => {
+  ;['AWS_ACCESS_KEY_ID', 'AWS_SECRET_ACCESS_KEY', 'AWS_S3_REGION', 'AWS_S3_BUCKET'].forEach((variable) => {
     if (!process.env[variable]) {
       console.error(`${variable}: environment variable not found!`)
       process.exit(1)
