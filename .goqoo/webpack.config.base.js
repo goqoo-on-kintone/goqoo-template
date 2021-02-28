@@ -74,16 +74,18 @@ const config = {
         use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
       },
       {
-        test: /\.scss$/,
+        test: /\.(scss)$/,
         use: [
           { loader: 'style-loader' },
           { loader: 'css-loader' },
           {
-            // Loader for webpack to process CSS with PostCSS
+            // for Bootstrap 5.0
             loader: 'postcss-loader',
             options: {
-              plugins: function () {
-                return [require('autoprefixer')]
+              postcssOptions: {
+                plugins: function () {
+                  return [require('autoprefixer')]
+                },
               },
             },
           },
