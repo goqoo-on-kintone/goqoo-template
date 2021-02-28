@@ -1,0 +1,26 @@
+<div id="customize-view-inner">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div class="btn btn-primary" v-on:click="dummyAlert">Excelダウンロード</div>
+        <div class="btn btn-success" v-on:click="dummyAlert">全レコードを保存</div>
+      </div>
+    </div>
+    <div class="row">
+      <table class="table table-striped table-bordered table-hover table-sm table-goqoo">
+        <thead>
+          <tr>
+            <th v-for="(prop, code) in fieldMap">{{ prop.label }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="(record, i) in records">
+            <td v-for="(prop, code) in fieldMap">
+              <input class="form-control" type="text" v-model:text="record[code].value" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

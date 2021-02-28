@@ -1,2 +1,3 @@
-apps: []
+apps:
+  - test2
 useDropbox: false

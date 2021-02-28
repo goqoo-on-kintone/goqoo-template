@@ -1,0 +1,15 @@
+{
+  "文字列__1行_": {
+    "type": "SINGLE_LINE_TEXT",
+    "label": "文字列 (1行)",
+    "noLabel": "false",
+    "code": "文字列__1行_",
+    "required": "false",
+    "minLength": null,
+    "maxLength": null,
+    "expression": "",
+    "hideExpression": "false",
+    "unique": "false",
+    "defaultValue": ""
+  }
+}

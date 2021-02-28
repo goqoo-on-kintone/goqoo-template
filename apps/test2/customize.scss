@@ -1,0 +1,47 @@
+// kintoneデフォルトのborderを非表示
+.app-index-contents-gaia > .box-gaia,
+.contents-bottommenu-gaia {
+  border-width: 0;
+}
+
+$theme-colors: (
+  'primary': #3498da,
+);
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+// グリッドだけはdivタグの外で有効化
+@import '~bootstrap/scss/grid';
+
+// カスタマイズビューのみに適用
+#customize-view-inner {
+  @import '~bootstrap/scss/tables';
+  @import '~bootstrap/scss/forms';
+  @import '~bootstrap/scss/buttons';
+
+  // レコード一覧
+  .table-goqoo {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .table-goqoo input {
+    height: 1.625rem; // 26px相当
+    margin: 0;
+    font-size: 0.875rem;
+    border-radius: 0%;
+  }
+
+  .btn {
+    border-radius: 0%;
+  }
+
+  .number {
+    text-align: right;
+  }
+}
