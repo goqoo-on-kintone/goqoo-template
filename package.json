@@ -24,6 +24,7 @@
     "@babel/core": "^7.0.0",
     "@babel/plugin-proposal-class-properties": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
+    "@kintone/dts-gen": "^4.1.0",
     "autoprefixer": "^10.2.4",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.4",
