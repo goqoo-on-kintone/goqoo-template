@@ -6,7 +6,7 @@ kintone.events.on(
   async (event) => {
     const confirmed = await swal({
       text: '保存してもよろしいですか？',
-      buttons: true,
+      buttons: { confirm: true },
       icon: img,
     })
     if (!confirmed) {
