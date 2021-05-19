@@ -1,2 +1,2 @@
 const foo: string = 'hoge'
-console.info(foo)
+console.info(foo, document.querySelector('.a'))
