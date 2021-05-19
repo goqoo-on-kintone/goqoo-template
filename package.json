@@ -14,7 +14,8 @@
     "release:s3": "cross-env S3=true npm run release",
     "prettier": "prettier --write \"apps/**/*.js\" \"config/**/*.js\"",
     "eslint": "eslint --fix \"apps/**/*.js\" \"config/**/*.js\"",
-    "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check"
+    "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
+    "preinstall": "typesync || true"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +23,9 @@
   "private": true,
   "devDependencies": {
     "@kintone/dts-gen": "^4.1.0",
+    "@types/eslint": "^7.2.10",
+    "@types/eslint-plugin-prettier": "^3.1.0",
+    "@types/prettier": "^2.2.3",
     "babel-eslint": "^10.0.1",
     "cross-env": "^7.0.3",
     "dotenv": "^8.2.0",
@@ -36,7 +40,8 @@
     "eslint-plugin-vue": "^7.6.0",
     "ginue": "^2.0.0",
     "goqoo": "^0.3.0",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "typesync": "^0.8.0"
   },
   "dependencies": {
     "@kintone/rest-api-client": "^1.10.0",
