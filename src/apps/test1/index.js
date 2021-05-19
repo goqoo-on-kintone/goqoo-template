@@ -1,5 +1,5 @@
 import swal from 'sweetalert'
-import img from '../../.goqoo/img/SmallLogo.jpg'
+import img from '../../img/SmallLogo.jpg'
 
 kintone.events.on('app.record.index.show', (event) => {
   swal({
