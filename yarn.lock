@@ -594,11 +594,6 @@ body-parser@1.19.0:
     raw-body "2.4.0"
     type-is "~1.6.17"
 
-bootstrap@^5.0.0-beta2:
-  version "5.0.0-beta2"
-  resolved "https://registry.npmjs.org/bootstrap/-/bootstrap-5.0.0-beta2.tgz#ab1504a12807fa58e5e41408e35fcea42461e84b"
-  integrity sha512-e+uPbPHqTQWKyCX435uVlOmgH9tUt0xtjvyOC7knhKgOS643BrQKuTo+KecGpPV7qlmOyZgCfaM4xxPWtDEN/g==
-
 boxen@^1.2.1:
   version "1.3.0"
   resolved "https://registry.npmjs.org/boxen/-/boxen-1.3.0.tgz#55c6c39a8ba58d9c61ad22cd877532deb665a20b"
@@ -5718,11 +5713,6 @@ vue-eslint-parser@^7.5.0:
     espree "^6.2.1"
     esquery "^1.4.0"
     lodash "^4.17.15"
-
-vue@^2.5.9:
-  version "2.6.12"
-  resolved "https://registry.npmjs.org/vue/-/vue-2.6.12.tgz#f5ebd4fa6bd2869403e29a896aed4904456c9123"
-  integrity sha512-uhmLFETqPPNyuLLbsKz6ioJ4q7AZHzD8ZVFNATNyICSZouqP2Sz0rotWQC8UNBF6VGSCs5abnKJoStA6JbCbfg==
 
 walk@2.3.x:
   version "2.3.14"
