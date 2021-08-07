@@ -1,6 +1,5 @@
 {
-  "name": "goqoo-template",
-  "version": "1.0.0",
+  "name": "",
   "description": "",
   "scripts": {
     "start": "webpack serve --config config/webpack.config.goqoo.js --mode development",
@@ -17,8 +16,6 @@
     "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
     "preinstall": "typesync || true"
   },
-  "keywords": [],
-  "author": "",
   "license": "UNLICENSED",
   "private": true,
   "devDependencies": {
