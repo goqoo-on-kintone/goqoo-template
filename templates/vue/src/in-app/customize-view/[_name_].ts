@@ -5,8 +5,8 @@ import type { IndexEvent } from 'types'
 
 import Vue from 'vue'
 // @ts-expect-error
-import HTML_TEMPLATE from './customize-view.html'
-import './customize-view.scss'
+import HTML_TEMPLATE from './[_name_].html'
+import './[_name_].scss'
 
 kintone.events.on('app.record.index.show', async (event: IndexEvent<any /* kintone.types.SavedXxxxFields */>) => {
   if (event.viewName !== 'カスタマイズビュー') {
@@ -25,7 +25,7 @@ kintone.events.on('app.record.index.show', async (event: IndexEvent<any /* kinto
   const client = new KintoneRestAPIClient()
   const { properties } = await client.app.getFormFields({ app: kintone.app.getId() as number })
 
-  const fieldCodes = ['会社名', '部署名', '担当者名', '郵便番号', 'TEL', 'FAX', '住所']
+  const fieldCodes = /*%& fieldCodes %*/ /*% */ ['会社名', '部署名', '担当者名', '郵便番号', 'TEL'] /* %*/
   const fields = fieldCodes.map((code) => ({ code, label: properties[code].label }))
   const records = event.records.map((record) =>
     Object.fromEntries(fieldCodes.map((code) => [code, record[code].value]))
