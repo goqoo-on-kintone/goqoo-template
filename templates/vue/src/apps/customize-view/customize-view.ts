@@ -1,11 +1,12 @@
-import { KintoneRestAPIClient } from '@kintone/rest-api-client'
-import Vue from 'vue'
 import swal from 'sweetalert'
+import { KintoneRestAPIClient } from '@kintone/rest-api-client'
+import { SmallLogo } from 'img'
+import type { IndexEvent } from 'types'
+
+import Vue from 'vue'
 // @ts-expect-error
 import HTML_TEMPLATE from './customize-view.html'
 import './customize-view.scss'
-import { SmallLogo } from 'img'
-import type { IndexEvent } from 'types'
 
 export default async (event: IndexEvent<any /* kintone.types.SavedXxxxFields */>) => {
   if (event.viewName !== 'カスタマイズビュー') {
