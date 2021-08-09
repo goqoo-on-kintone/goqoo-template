@@ -1,6 +1,6 @@
-import customize from './customize'
+import render from './customize-view'
 
 kintone.events.on('app.record.index.show', (event) => {
-  event = customize(event)
+  event = render(event)
   return event
 })
