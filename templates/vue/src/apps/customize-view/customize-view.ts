@@ -31,7 +31,7 @@ export default async (event: IndexEvent<any /* kintone.types.SavedXxxxFields */>
     Object.fromEntries(fieldCodes.map((code) => [code, record[code].value]))
   )
 
-  divNode.insertAdjacentHTML('beforebegin', HTML_TEMPLATE)
+  divNode.insertAdjacentHTML('beforeend', HTML_TEMPLATE)
   new Vue({
     // Vueを適用するHTML_TEMPLATE内のelement
     el: '#customize-view-inner',
