@@ -5,6 +5,7 @@ import type { IndexEvent } from 'types'
 
 import React from 'react'
 import ReactDOM from 'react-dom'
+import './customize-view.scss'
 
 export default async (event: IndexEvent<any /* kintone.types.SavedXxxxFields */>) => {
   if (event.viewName !== 'カスタマイズビュー') {
