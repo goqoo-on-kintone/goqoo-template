@@ -54,14 +54,16 @@ export default async (event: IndexEvent<any /* kintone.types.SavedXxxxFields */>
           <table className="table table-striped table-bordered table-hover table-sm table-goqoo">
             <thead>
               <tr>
-                <th>{fields.map(({ label }) => label)}</th>
+                {fields.map(({ label }, i) => (
+                  <th key={i}>{label}</th>
+                ))}
               </tr>
             </thead>
             <tbody>
               {records.map((record, i) => (
                 <tr key={i}>
-                  {fields.map(({ code }) => (
-                    <td>{record[code]}</td>
+                  {fields.map(({ code }, j) => (
+                    <td key={j}>{record[code]}</td>
                   ))}
                 </tr>
               ))}
