@@ -63,7 +63,9 @@ export default async (event: IndexEvent<any /* kintone.types.SavedXxxxFields */>
               {records.map((record, i) => (
                 <tr key={i}>
                   {fields.map(({ code }, j) => (
-                    <td key={j}>{record[code]}</td>
+                    <td key={j}>
+                      <input className="form-control" type="text" defaultValue={record[code]} />
+                    </td>
                   ))}
                 </tr>
               ))}
