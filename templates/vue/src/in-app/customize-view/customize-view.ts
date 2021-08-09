@@ -8,7 +8,7 @@ import Vue from 'vue'
 import HTML_TEMPLATE from './customize-view.html'
 import './customize-view.scss'
 
-export default async (event: IndexEvent<any /* kintone.types.SavedXxxxFields */>) => {
+kintone.events.on('app.record.index.show', async (event: IndexEvent<any /* kintone.types.SavedXxxxFields */>) => {
   if (event.viewName !== 'カスタマイズビュー') {
     return
   }
@@ -46,4 +46,4 @@ export default async (event: IndexEvent<any /* kintone.types.SavedXxxxFields */>
       },
     },
   })
-}
+})
