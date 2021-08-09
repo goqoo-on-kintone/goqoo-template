@@ -20,6 +20,7 @@
   "private": true,
   "devDependencies": {
     "@kintone/dts-gen": "^4.2.10",
+    "@types/bootstrap": "^5.1.0",
     "@types/eslint": "^7.28.0",
     "@types/eslint-plugin-prettier": "^3.1.0",
     "@types/luxon": "^1.27.1",
@@ -44,6 +45,7 @@
   },
   "dependencies": {
     "@kintone/rest-api-client": "^2.0.13",
+    "bootstrap": "^5.1.0",
     "kintone-ui-component": "^1.0.4",
     "luxon": "^2.0.1",
     "react": "^17.0.2",
