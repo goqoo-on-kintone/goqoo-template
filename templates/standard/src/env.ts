@@ -13,6 +13,7 @@ if (!Array.isArray(environments)) {
   throw new Error('environments is not defined.')
 }
 
+// TODO: 名前はcontext, ctx辺りの方がベター？
 export const env = environments.find((e) =>
   Object.values(e.app).some((appId) => appId === (kintone.app.getId() as number))
 )
