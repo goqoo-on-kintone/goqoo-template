@@ -8,7 +8,7 @@ module.exports = {
   'environments': [
     // TODO: dts-gen, ginue, プログラム内で全て共通化
     {
-      name: 'development',
+      env: 'development',
       host: 'the-red.cybozu.com',
       app: {
         'project': 148,
@@ -17,7 +17,7 @@ module.exports = {
       },
     },
     {
-      name: 'staging',
+      env: 'staging',
       host: 'the-red.cybozu.com',
       app: {
         'project': 169,
@@ -27,7 +27,7 @@ module.exports = {
       guest: 34,
     },
     {
-      name: 'production',
+      env: 'production',
       host: 'the-red.cybozu.com',
       app: {
         'project': 175,
