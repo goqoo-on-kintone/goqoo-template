@@ -1,11 +1,13 @@
+// TODO: 型定義を追加する
+
 module.exports = {
   'bundlerType': 'standard', // 'standard', 'vue', 'react'
   'dts-gen': {
     env: 'development',
   },
-  'env': {
+  'environments': [
     // TODO: dts-gen, ginue, プログラム内で全て共通化
-    development: {
+    {
       name: 'development',
       host: 'the-red.cybozu.com',
       app: {
@@ -14,7 +16,7 @@ module.exports = {
         'sales-activity': 150,
       },
     },
-    staging: {
+    {
       name: 'staging',
       host: 'the-red.cybozu.com',
       app: {
@@ -24,7 +26,7 @@ module.exports = {
       },
       guest: 34,
     },
-    production: {
+    {
       name: 'production',
       host: 'the-red.cybozu.com',
       app: {
@@ -33,7 +35,7 @@ module.exports = {
         'sales-activity': 177,
       },
     },
-  },
+  ],
 
   // TODO: import時のrootをどこに置くか？特に何もしなくて良いか？
 }

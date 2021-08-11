@@ -1,5 +1,18 @@
-// import { environments } from '../goqoo.config'
-// TODO: environmentsからappを取り出す
-// const spaces = environments[location.hostname]
-// export const app = spaces.find((s) => Object.values(s).some((appId) => appId === kintone.app.getId()))
-console.log()
+import { cosmiconfigSync } from 'cosmiconfig'
+
+type Env = {
+  name: string
+  host: string
+  app: { [appName: string]: number }
+}
+
+const goqoo = cosmiconfigSync('goqoo').search()
+const environments: Env[] | {} | undefined = goqoo && goqoo.config && goqoo.config.environments
+
+if (!Array.isArray(environments)) {
+  throw new Error('environments is not defined.')
+}
+
+export const env = environments.find((e) =>
+  Object.values(e.app).some((appId) => appId === (kintone.app.getId() as number))
+)
