@@ -1,24 +1,36 @@
 module.exports = {
   bundlerType: 'standard', // 'standard', 'vue', 'react'
-  environments: [
+  env: {
     // TODO: dts-gen, ginue, プログラム内で全て共通化
-    {
+    development: {
       name: 'development',
-      host: '<開発ドメイン>.cybozu.com',
-      apps: {
-        AppName1: 123,
-        AppName2: 246,
+      host: 'the-red.cybozu.com',
+      app: {
+        project: 148,
+        customer: 149,
+        sales: 150,
       },
     },
-    {
-      name: '<本番ドメイン>.cybozu.com',
-      apps: {
-        AppName1: 123,
-        AppName2: 246,
+    staging: {
+      name: 'staging',
+      host: 'the-red.cybozu.com',
+      app: {
+        project: 169,
+        customer: 170,
+        sales: 171,
+      },
+      guest: 34,
+    },
+    production: {
+      name: 'production',
+      host: 'the-red.cybozu.com',
+      app: {
+        project: 175,
+        customer: 176,
+        sales: 177,
       },
     },
-  ],
-  // TODO: goqoo new時にginuercを一緒に作成（ginue.config.js）
+  },
 
   // TODO: import時のrootをどこに置くか？特に何もしなくて良いか？
 }
