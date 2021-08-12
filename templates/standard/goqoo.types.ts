@@ -10,6 +10,6 @@ export type Context<TEnv, TAppId, TApiToken> = {
 
 export type Config<TEnv, TAppId, TApiToken> = {
   'bundlerType'?: 'standard' | 'vue' | 'react'
-  'dts-gen'?: { env: TEnv }
+  'dts-gen'?: { env: TEnv; skip?: Partial<keyof TAppId> }
   'environments': Context<TEnv, TAppId, TApiToken>[]
 }
