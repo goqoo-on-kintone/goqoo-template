@@ -11,6 +11,6 @@
     "sourceMap": true
   },
   "files": ["./node_modules/@kintone/dts-gen/kintone.d.ts"],
-  "include": ["src/**/*", "types/*"],
+  "include": ["src/**/*", "dts/*"],
   "exclude": ["dist", "test"]
 }
