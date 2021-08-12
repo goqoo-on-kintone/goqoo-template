@@ -4,5 +4,7 @@ require('dotenv').config()
 
 module.exports = {
   location: 'kintone-settings',
+  fileType: 'js',
+  alt: true,
   env: Object.fromEntries(config.environments.map((_) => [_.env, _])),
 }
