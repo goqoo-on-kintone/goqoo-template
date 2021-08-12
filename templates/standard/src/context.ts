@@ -1,5 +1,5 @@
 import config from '../goqoo.config'
 
-export const context = config.environments.find((e) =>
-  Object.values(e.appIds).some((appId) => appId === (kintone.app.getId() as number))
+export const context = config.environments.find((ctx) =>
+  Object.values(ctx.appId).some((id) => id === (kintone.app.getId() as number))
 )

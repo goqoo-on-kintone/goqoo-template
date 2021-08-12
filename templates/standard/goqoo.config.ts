@@ -5,16 +5,16 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 export type Env = 'development' | 'staging' | 'production'
-export type AppIds = {
+export type AppId = {
   'project': number
   'customer': number
   'sales-activity': number
 }
-export type ApiTokens = {
+export type ApiToken = {
   'sales-activity'?: string
 }
 
-const config: Config<Env, AppIds, ApiTokens> = {
+const config: Config<Env, AppId, ApiToken> = {
   'bundlerType': 'standard',
   'dts-gen': {
     env: 'development',
@@ -23,7 +23,7 @@ const config: Config<Env, AppIds, ApiTokens> = {
     {
       env: 'development',
       domain: 'the-red.cybozu.com',
-      appIds: {
+      appId: {
         'project': 148,
         'customer': 149,
         'sales-activity': 150,
@@ -32,7 +32,7 @@ const config: Config<Env, AppIds, ApiTokens> = {
     {
       env: 'staging',
       domain: 'the-red.cybozu.com',
-      appIds: {
+      appId: {
         'project': 169,
         'customer': 170,
         'sales-activity': 171,
@@ -42,12 +42,12 @@ const config: Config<Env, AppIds, ApiTokens> = {
     {
       env: 'production',
       domain: 'the-red.cybozu.com',
-      appIds: {
+      appId: {
         'project': 175,
         'customer': 176,
         'sales-activity': 177,
       },
-      apiTokens: {
+      apiToken: {
         'sales-activity': process.env.API_TOKEN_SALES_ACTIVITY_PRODUCTION,
       },
     },
