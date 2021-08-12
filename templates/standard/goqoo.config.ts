@@ -18,7 +18,7 @@ const config: Config<Env, AppId, ApiToken> = {
   bundlerType: 'standard',
   dtsGen: {
     env: 'development',
-    skip: ['customer'],
+    // skip: ['customer'],
   },
   environments: [
     {
