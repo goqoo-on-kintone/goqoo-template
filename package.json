@@ -15,5 +15,8 @@
   "engines": {
     "npm": "!!!!DO_NOT_INSTALL_MODULES_IN_THIS_FOLDER!!!!",
     "yarn": "!!!!DO_NOT_INSTALL_MODULES_IN_THIS_FOLDER!!!!"
+  },
+  "prettier": {
+    "printWidth": 120
   }
 }
