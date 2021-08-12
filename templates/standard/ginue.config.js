@@ -1,11 +1,8 @@
-const { cosmiconfigSync } = require('cosmiconfig')
-const goqoo = cosmiconfigSync('goqoo').search()
-const environments = goqoo && goqoo.config && goqoo.config.environments
+require('ts-node').register()
+const { default: config } = require('./goqoo.config.ts')
+require('dotenv').config()
 
 module.exports = {
   location: 'kintone-settings',
-  // TODO: envオブジェクトに変換
-  // env,
+  env: Object.fromEntries(config.environments.map((_) => [_.env, _])),
 }
-
-console.log(module.exports)

@@ -1,6 +1,6 @@
 // TODO: 型定義を追加する
 
-module.exports = {
+export default {
   'bundlerType': 'standard', // 'standard', 'vue', 'react'
   'dts-gen': {
     env: 'development',
@@ -9,7 +9,7 @@ module.exports = {
     // TODO: dts-gen, ginue, プログラム内で全て共通化
     {
       env: 'development',
-      host: 'the-red.cybozu.com',
+      domain: 'the-red.cybozu.com',
       app: {
         'project': 148,
         'customer': 149,
@@ -18,7 +18,7 @@ module.exports = {
     },
     {
       env: 'staging',
-      host: 'the-red.cybozu.com',
+      domain: 'the-red.cybozu.com',
       app: {
         'project': 169,
         'customer': 170,
@@ -28,7 +28,7 @@ module.exports = {
     },
     {
       env: 'production',
-      host: 'the-red.cybozu.com',
+      domain: 'the-red.cybozu.com',
       app: {
         'project': 175,
         'customer': 176,
