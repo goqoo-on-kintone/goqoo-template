@@ -6,5 +6,5 @@ module.exports = {
   location: 'kintone-settings',
   fileType: 'js',
   alt: true,
-  env: Object.fromEntries(config.environments.map((_) => [_.env, _])),
+  env: Object.fromEntries(config.environments.map((_) => [_.env, { app: _.appIds, ..._ }])),
 }
