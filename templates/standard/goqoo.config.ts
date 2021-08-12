@@ -1,5 +1,5 @@
 // TODO: from 'goqoo' にする
-import type { Config } from './goqoo.types'
+import type { Config } from '../../../goqoo/src/types/goqoo.types'
 // TODO: goqoo側でdotenv.config()走らせる
 import dotenv from 'dotenv'
 dotenv.config()
@@ -15,12 +15,12 @@ export type ApiToken = {
 }
 
 const config: Config<Env, AppId, ApiToken> = {
-  'bundlerType': 'standard',
-  'dts-gen': {
+  bundlerType: 'standard',
+  dtsGen: {
     env: 'development',
     skip: 'customer',
   },
-  'environments': [
+  environments: [
     {
       env: 'development',
       domain: 'the-red.cybozu.com',
