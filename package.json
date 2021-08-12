@@ -11,5 +11,9 @@
   "bugs": {
     "url": "https://github.com/goqoo-on-kintone/goqoo-template/issues"
   },
-  "homepage": "https://github.com/goqoo-on-kintone/goqoo-template#readme"
+  "homepage": "https://github.com/goqoo-on-kintone/goqoo-template#readme",
+  "engines": {
+    "npm": "!!!!DO_NOT_INSTALL_MODULES_IN_THIS_FOLDER!!!!",
+    "yarn": "!!!!DO_NOT_INSTALL_MODULES_IN_THIS_FOLDER!!!!"
+  }
 }
