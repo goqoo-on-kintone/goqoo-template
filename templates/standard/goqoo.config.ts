@@ -1,16 +1,29 @@
-// TODO: 型定義を追加する
+// TODO: from 'goqoo' にする
+import type { Config } from './goqoo.types'
+// TODO: goqoo側でdotenv.config()走らせる
+import dotenv from 'dotenv'
+dotenv.config()
 
-export default {
-  'bundlerType': 'standard', // 'standard', 'vue', 'react'
+export type Env = 'development' | 'staging' | 'production'
+export type AppIds = {
+  'project': number
+  'customer': number
+  'sales-activity': number
+}
+export type ApiTokens = {
+  'sales-activity'?: string
+}
+
+const config: Config<Env, AppIds, ApiTokens> = {
+  'bundlerType': 'standard',
   'dts-gen': {
     env: 'development',
   },
   'environments': [
-    // TODO: dts-gen, ginue, プログラム内で全て共通化
     {
       env: 'development',
       domain: 'the-red.cybozu.com',
-      app: {
+      appIds: {
         'project': 148,
         'customer': 149,
         'sales-activity': 150,
@@ -19,7 +32,7 @@ export default {
     {
       env: 'staging',
       domain: 'the-red.cybozu.com',
-      app: {
+      appIds: {
         'project': 169,
         'customer': 170,
         'sales-activity': 171,
@@ -29,13 +42,16 @@ export default {
     {
       env: 'production',
       domain: 'the-red.cybozu.com',
-      app: {
+      appIds: {
         'project': 175,
         'customer': 176,
         'sales-activity': 177,
       },
+      apiTokens: {
+        'sales-activity': process.env.API_TOKEN_SALES_ACTIVITY_PRODUCTION,
+      },
     },
   ],
-
-  // TODO: import時のrootをどこに置くか？特に何もしなくて良いか？
 }
+
+export default config
