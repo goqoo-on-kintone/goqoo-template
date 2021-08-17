@@ -1,5 +1,4 @@
-// TODO: from 'goqoo' にする
-import type { Config } from '../../../goqoo/src/types/goqoo.types'
+import type { Config } from 'goqoo/src/types/goqoo.types'
 // TODO: goqoo側でdotenv.config()走らせる
 import dotenv from 'dotenv'
 dotenv.config()
