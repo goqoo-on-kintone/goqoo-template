@@ -18,6 +18,7 @@
  * @type {import('goqoo').Config<Env, AppId, ApiToken>}
  */
 const config = {
+  // uuid: '00ebca53-8540-434b-971b-d0b7c77199cf',
   bundlerType: 'default',
   dtsGen: {
     env: 'development',
