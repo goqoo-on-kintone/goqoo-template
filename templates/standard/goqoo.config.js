@@ -1,8 +1,7 @@
 // @ts-check
 
 // TODO: goqoo側でdotenv.config()走らせる
-import dotenv from 'dotenv'
-dotenv.config()
+require('dotenv').config()
 
 /**
  * @typedef {'development' | 'staging' | 'production'} Env
@@ -21,7 +20,7 @@ dotenv.config()
 /**
  * @type {import('goqoo/src/types/goqoo.types').Config<Env, AppId, ApiToken>}
  */
-const config = {
+module.exports = {
   bundlerType: 'standard',
   dtsGen: {
     env: 'development',
@@ -61,5 +60,3 @@ const config = {
     },
   ],
 }
-
-export default config
