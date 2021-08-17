@@ -15,7 +15,7 @@
  */
 
 /**
- * @type {import('goqoo/src/types/goqoo.types').Config<Env, AppId, ApiToken>}
+ * @type {import('goqoo').Config<Env, AppId, ApiToken>}
  */
 const config = {
   bundlerType: 'default',
