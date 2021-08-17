@@ -1,8 +1,5 @@
 // @ts-check
 
-// TODO: goqoo側でdotenv.config()走らせる
-require('dotenv').config()
-
 /**
  * @typedef {'development' | 'staging' | 'production'} Env
  *
