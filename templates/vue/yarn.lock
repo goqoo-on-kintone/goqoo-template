@@ -3722,10 +3722,10 @@ google-cdn-data@^0.1.6:
   resolved "https://registry.npmjs.org/google-cdn-data/-/google-cdn-data-0.1.25.tgz#9c3c3149ab18a7c2d5ed5f0f0b4ee8bc45992b71"
   integrity sha1-nDwxSasYp8LV7V8PC07ovEWZK3E=
 
-goqoo@^1.0.0-beta6:
-  version "1.0.0-beta6"
-  resolved "https://registry.npmjs.org/goqoo/-/goqoo-1.0.0-beta6.tgz#08a3ad93e9777521dcfd1cc85b7d245cb4fc8663"
-  integrity sha512-X5WZoYJ3WE7kmAWNVOYI9A9tonnnJtDqsSQ8XsvBrYSR2eI36LXi6dHF/p+WbyfGWrwJq4obbPF4NtG+/jQrag==
+goqoo@^1.0.0-beta7:
+  version "1.0.0-beta7"
+  resolved "https://registry.npmjs.org/goqoo/-/goqoo-1.0.0-beta7.tgz#e1bbe83996477400c9fae297739fa2ca00c95849"
+  integrity sha512-BU/KN+TrlL7PGRR78NUBJQTHdq50h0IaZij8JU14Uneug7Ips4YnVpd8LwYFmh6tghjq1Ch/LmsJWtdT26YDAg==
   dependencies:
     "@babel/core" "^7.14.3"
     "@babel/preset-env" "^7.14.2"
@@ -3755,8 +3755,9 @@ goqoo@^1.0.0-beta6:
     sass-loader "^11.1.1"
     source-map-support "^0.5.19"
     style-loader "^2.0.0"
-    tslib "^2.1.0"
+    typescript "^4.3.5"
     url-loader "^4.1.1"
+    uuid "^8.3.2"
     webpack "^5.37.1"
     webpack-cli "^4.7.0"
     webpack-dev-server "^3.11.2"
@@ -7298,7 +7299,7 @@ tsconfig-paths@^3.9.0:
     minimist "^1.2.0"
     strip-bom "^3.0.0"
 
-tslib@^2.0.1, tslib@^2.1.0:
+tslib@^2.0.1:
   version "2.3.1"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
   integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
@@ -7378,6 +7379,11 @@ typedarray-to-buffer@^3.1.5:
   integrity sha512-zdu8XMNEDepKKR+XYOXAVPtWui0ly0NtohUscw+UmaHiAWT8hrV1rr//H6V+0DvJ3OQ19S979M0laLfX8rm82Q==
   dependencies:
     is-typedarray "^1.0.0"
+
+typescript@^4.3.5:
+  version "4.3.5"
+  resolved "https://registry.npmjs.org/typescript/-/typescript-4.3.5.tgz#4d1c37cc16e893973c45a06886b7113234f119f4"
+  integrity sha512-DqQgihaQ9cUrskJo9kIyW/+g0Vxsk8cDtZ52a3NGh0YNTfpUSArXSohyUGnvbPazEPLu398C0UxmKSOrPumUzA==
 
 typesync@^0.8.0:
   version "0.8.0"
@@ -7581,7 +7587,7 @@ uuid@^3.3.2, uuid@^3.4.0:
   resolved "https://registry.npmjs.org/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
 
-uuid@^8.3.0:
+uuid@^8.3.0, uuid@^8.3.2:
   version "8.3.2"
   resolved "https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==

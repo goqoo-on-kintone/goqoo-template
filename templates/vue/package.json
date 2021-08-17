@@ -41,7 +41,7 @@
   "dependencies": {
     "@kintone/rest-api-client": "^2.0.13",
     "bootstrap": "^5.1.0",
-    "goqoo": "^1.0.0-beta6",
+    "goqoo": "^1.0.0-beta7",
     "kintone-ui-component": "^1.0.4",
     "luxon": "^2.0.1",
     "sweetalert": "^2.1.2",
