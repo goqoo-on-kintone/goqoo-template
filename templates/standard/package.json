@@ -45,7 +45,6 @@
   },
   "dependencies": {
     "@kintone/rest-api-client": "^2.0.13",
-    "cosmiconfig": "^7.0.0",
     "goqoo": "^1.0.0-beta5",
     "kintone-ui-component": "^1.0.4",
     "luxon": "^2.0.1",
