@@ -53,7 +53,7 @@ const config = {
         'sales-activity': 177,
       },
       apiToken: {
-        'sales-activity': process.env.API_TOKEN_SALES_ACTIVITY_PRODUCTION,
+        // 'sales-activity': process.env.API_TOKEN_SALES_ACTIVITY_PRODUCTION,
       },
     },
   ],
