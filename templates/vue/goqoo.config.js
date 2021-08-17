@@ -1,3 +1,3 @@
 module.exports = {
-  bundlerType: 'vue', // 'standard', 'vue', 'react'
+  bundlerType: 'vue', // 'default', 'vue', 'react'
 }

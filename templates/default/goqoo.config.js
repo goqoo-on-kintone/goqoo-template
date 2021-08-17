@@ -18,7 +18,7 @@
  * @type {import('goqoo/src/types/goqoo.types').Config<Env, AppId, ApiToken>}
  */
 module.exports = {
-  bundlerType: 'standard',
+  bundlerType: 'default',
   dtsGen: {
     env: 'development',
     // skip: ['customer'],
