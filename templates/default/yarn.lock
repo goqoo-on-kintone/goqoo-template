@@ -2349,6 +2349,11 @@ core-js@^3.16.0, core-js@^3.6.5:
   resolved "https://registry.npmjs.org/core-js/-/core-js-3.16.0.tgz#1d46fb33720bc1fa7f90d20431f36a5540858986"
   integrity sha512-5+5VxRFmSf97nM8Jr2wzOwLqRo6zphH2aX+7KsAUONObyzakDNq2G/bgbhinxB4PoV9L3aXQYhiDKyIKWd2c8g==
 
+core-js@^3.16.2:
+  version "3.16.2"
+  resolved "https://registry.npmjs.org/core-js/-/core-js-3.16.2.tgz#3f485822889c7fc48ef463e35be5cc2a4a01a1f4"
+  integrity sha512-P0KPukO6OjMpjBtHSceAZEWlDD1M2Cpzpg6dBbrjFqFhBHe/BwhxaP820xKOjRn/lZRQirrCusIpLS/n2sgXLQ==
+
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
@@ -3685,10 +3690,10 @@ google-cdn-data@^0.1.6:
   resolved "https://registry.npmjs.org/google-cdn-data/-/google-cdn-data-0.1.25.tgz#9c3c3149ab18a7c2d5ed5f0f0b4ee8bc45992b71"
   integrity sha1-nDwxSasYp8LV7V8PC07ovEWZK3E=
 
-goqoo@^1.0.0-beta7:
-  version "1.0.0-beta7"
-  resolved "https://registry.npmjs.org/goqoo/-/goqoo-1.0.0-beta7.tgz#e1bbe83996477400c9fae297739fa2ca00c95849"
-  integrity sha512-BU/KN+TrlL7PGRR78NUBJQTHdq50h0IaZij8JU14Uneug7Ips4YnVpd8LwYFmh6tghjq1Ch/LmsJWtdT26YDAg==
+goqoo@^1.0.0-beta8:
+  version "1.0.0-beta8"
+  resolved "https://registry.npmjs.org/goqoo/-/goqoo-1.0.0-beta8.tgz#0977eaaca1ced8b3153ecead161334e913b27820"
+  integrity sha512-OLGqgrAqxOS5MlGNIPsltLVGfspDu9F9wvwfdOZrDXyyQ0XXr/7tGkce+22+la9FLWWZ5S6+0mqMPEMT06zVSg==
   dependencies:
     "@babel/core" "^7.14.3"
     "@babel/preset-env" "^7.14.2"
@@ -3701,6 +3706,7 @@ goqoo@^1.0.0-beta7:
     caller "^1.0.1"
     chalk "^4.1.2"
     change-case "^4.1.2"
+    core-js "^3.16.2"
     cosmiconfig "^7.0.0"
     css-loader "^5.2.4"
     dotenv "^10.0.0"
@@ -3708,6 +3714,7 @@ goqoo@^1.0.0-beta7:
     fs-extra "^9.1.0"
     html-loader "^2.1.2"
     js-yaml "^4.0.0"
+    luxon "^2.0.2"
     minimist "^1.2.5"
     mustache "^4.2.0"
     netrc-parser "^3.1.6"
@@ -4888,6 +4895,11 @@ luxon@^2.0.1:
   version "2.0.1"
   resolved "https://registry.npmjs.org/luxon/-/luxon-2.0.1.tgz#b41ca2f1f5ad8099c18603ae6c36a7794039daf0"
   integrity sha512-8Eawf81c9ZlQj62W3eq4mp+C7SAIAnmaS7ZuEAiX503YMcn+0C1JnMQRtfaQj6B5qTZLgHv0F4H5WabBCvi1fw==
+
+luxon@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/luxon/-/luxon-2.0.2.tgz#11f2cd4a11655fdf92e076b5782d7ede5bcdd133"
+  integrity sha512-ZRioYLCgRHrtTORaZX1mx+jtxKtKuI5ZDvHNAmqpUzGqSrR+tL4FVLn/CUGMA3h0+AKD1MAxGI5GnCqR5txNqg==
 
 make-dir@^3.0.0, make-dir@^3.0.2, make-dir@^3.1.0:
   version "3.1.0"
