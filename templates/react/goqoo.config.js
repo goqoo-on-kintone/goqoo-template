@@ -1,3 +1,22 @@
-module.exports = {
-  bundlerType: 'react', // 'default', 'vue', 'react'
+// @ts-check
+
+/**
+ * @typedef {'development' | 'staging' | 'production'} Env
+ *
+ * @typedef {{
+ *  'app': number
+ * }} AppId
+ *
+ * @typedef {{
+ *  'app'?: string
+ * }} ApiToken
+ */
+
+/**
+ * @type {import('goqoo/src/types/goqoo.types').Config<Env, AppId, ApiToken>}
+ */
+const config = {
+  bundlerType: 'react',
+  environments: [],
 }
+module.exports = config

@@ -17,7 +17,7 @@
 /**
  * @type {import('goqoo/src/types/goqoo.types').Config<Env, AppId, ApiToken>}
  */
-module.exports = {
+const config = {
   bundlerType: 'default',
   dtsGen: {
     env: 'development',
@@ -57,3 +57,4 @@ module.exports = {
     },
   ],
 }
+module.exports = config
