@@ -1,19 +1,27 @@
-import type { Config } from 'goqoo/src/types/goqoo.types'
+// @ts-check
+
 // TODO: goqoo側でdotenv.config()走らせる
 import dotenv from 'dotenv'
 dotenv.config()
 
-export type Env = 'development' | 'staging' | 'production'
-export type AppId = {
-  'project': number
-  'customer': number
-  'sales-activity': number
-}
-export type ApiToken = {
-  'sales-activity'?: string
-}
+/**
+ * @typedef {'development' | 'staging' | 'production'} Env
+ *
+ * @typedef {{
+ *  'project': number
+ *  'customer': number
+ *  'sales-activity': number
+ * }} AppId
+ *
+ * @typedef {{
+ *  'sales-activity'?: string
+ * }} ApiToken
+ */
 
-const config: Config<Env, AppId, ApiToken> = {
+/**
+ * @type {import('goqoo/src/types/goqoo.types').Config<Env, AppId, ApiToken>}
+ */
+const config = {
   bundlerType: 'standard',
   dtsGen: {
     env: 'development',
