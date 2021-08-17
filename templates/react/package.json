@@ -18,7 +18,6 @@
   "license": "UNLICENSED",
   "private": true,
   "devDependencies": {
-    "@kintone/dts-gen": "^4.2.10",
     "@types/bootstrap": "^5.1.0",
     "@types/eslint": "^7.28.0",
     "@types/eslint-plugin-prettier": "^3.1.0",

@@ -996,17 +996,6 @@
   resolved "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-1.2.0.tgz#87de7af9c231826fdd68ac7258f77c429e0e5fcf"
   integrity sha512-wdppn25U8z/2yiaT6YGquE6X8sSv7hNMWSXYSSU1jGv/yd6XqjXgTDJ8KP4NgjTXfJ3GbRjeeb8RTV7a/VpM+w==
 
-"@kintone/dts-gen@^4.2.10":
-  version "4.2.10"
-  resolved "https://registry.npmjs.org/@kintone/dts-gen/-/dts-gen-4.2.10.tgz#f40f0466bcb76049315938cd00d5c3bee716da27"
-  integrity sha512-g2MWEhbZHM4I5pihByKi/vFKAwRZ4Q0rnjXSAmjHtQ/cWGDWNuqGtu+iPUtvsaAWmMA22sKuljl7n7sLcYCBng==
-  dependencies:
-    axios "^0.21.0"
-    commander "^7.2.0"
-    form-data "^4.0.0"
-    lodash "^4.17.21"
-    prettier "^2.3.2"
-
 "@kintone/dts-gen@^4.2.11":
   version "4.2.11"
   resolved "https://registry.npmjs.org/@kintone/dts-gen/-/dts-gen-4.2.11.tgz#6dfe6f98097c1f792a01725a1b4807810e48ce45"
