@@ -38,7 +38,7 @@
     "typesync": "^0.8.0"
   },
   "dependencies": {
-    "@kintone/rest-api-client": "^2.0.13",
+    "@kintone/rest-api-client": "^2.0.15",
     "bootstrap": "^5.1.0",
     "goqoo": "^1.0.0-beta7",
     "kintone-ui-component": "^1.0.4",
