@@ -10,12 +10,16 @@
  * }} AppId
  *
  * @typedef {{
+ *  project: Record<string, number>
+ * }} ViewId
+ *
+ * @typedef {{
  *  sales_activity: string
  * }} ApiToken
  */
 
 /**
- * @type {import('goqoo').Config<Env, AppId, ApiToken>}
+ * @type {import('goqoo').Config<Env, AppId, ViewId, ApiToken>}
  */
 const config = {
   // uuid: '00ebca53-8540-434b-971b-d0b7c77199cf',
