@@ -27,7 +27,6 @@ kintone.events.on('app.record.index.show', async (event: IndexEvent<any /* kinto
 
   divNode.insertAdjacentHTML('beforeend', HTML_TEMPLATE)
   new Vue({
-    // Vueを適用するHTML_TEMPLATE内のelement
     el: '#customize-view-inner',
     data: {
       records,

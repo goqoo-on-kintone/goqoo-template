@@ -18,17 +18,13 @@ export const confirmDialog = async (text: string): Promise<SwalResult> => {
     buttons: {
       cancel: true,
       confirm: {
-        // Spinner回して待機
         closeModal: false,
       },
     },
-    // Cancelクリック以外では閉じないように制限
-    // Spinner中に間違えて閉じるの予防
     closeOnClickOutside: false,
     closeOnEsc: false,
   })
 
-  // Spinner回り始めたらキャンセルボタンを非表示に
   const cancelButton = document.querySelector('.swal-button--cancel')
   cancelButton?.parentNode?.removeChild(cancelButton)
 
@@ -44,7 +40,6 @@ export const errorDialog = async (error: Error | string): Promise<SwalResult> =>
   const content: SwalOptions['content'] | undefined =
     error instanceof Error
       ? {
-          // Errorオブジェクトの詳細をJSON形式で表示
           element: 'textarea',
           attributes: {
             value: JSON.stringify({ ...error, stack: error.stack }, null, ' '),
