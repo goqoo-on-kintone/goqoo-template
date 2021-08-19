@@ -3720,10 +3720,10 @@ google-cdn-data@^0.1.6:
   resolved "https://registry.npmjs.org/google-cdn-data/-/google-cdn-data-0.1.25.tgz#9c3c3149ab18a7c2d5ed5f0f0b4ee8bc45992b71"
   integrity sha1-nDwxSasYp8LV7V8PC07ovEWZK3E=
 
-goqoo@^1.0.0-beta9:
-  version "1.0.0-beta9"
-  resolved "https://registry.yarnpkg.com/goqoo/-/goqoo-1.0.0-beta9.tgz#5fd0248f598c2aeed20e8ce2f460eab41a337545"
-  integrity sha512-MemNr9q53cs+ysDcMdvlr2H0e03gt9sq9Mx9Rw0LB6QTOcRWkFzHHabOtmOr40BuDnOn0tDjvykEpZhPEXp9eg==
+goqoo@^1.0.0-beta11:
+  version "1.0.0-beta11"
+  resolved "https://registry.yarnpkg.com/goqoo/-/goqoo-1.0.0-beta11.tgz#213e2108c8202b93b2f030fd58ec4202386ad9db"
+  integrity sha512-9wHR8qpV7pwpxGiTPVaCGK+BUHqLRzIu4Ajao0p3qz6+ap7X9PhpgVCjzQdDlISVh0ETS5rsN3KtPfRHZGHuGg==
   dependencies:
     "@babel/core" "^7.14.3"
     "@babel/preset-env" "^7.14.2"
@@ -3755,6 +3755,7 @@ goqoo@^1.0.0-beta9:
     sass-loader "^11.1.1"
     source-map-support "^0.5.19"
     style-loader "^2.0.0"
+    sweetalert "^2.1.2"
     typescript "^4.3.5"
     url-loader "^4.1.1"
     uuid "^8.3.2"
