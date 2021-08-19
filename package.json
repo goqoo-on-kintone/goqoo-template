@@ -4,14 +4,14 @@
   "description": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goqoo-on-kintone/goqoo-template.git"
+    "url": "git+https://github.com/goqoo-on-kintone/goqoo-templates.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/goqoo-on-kintone/goqoo-template/issues"
+    "url": "https://github.com/goqoo-on-kintone/goqoo-templates/issues"
   },
-  "homepage": "https://github.com/goqoo-on-kintone/goqoo-template#readme",
+  "homepage": "https://github.com/goqoo-on-kintone/goqoo-templates#readme",
   "prettier": {
     "printWidth": 120
   }
