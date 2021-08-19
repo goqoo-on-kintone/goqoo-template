@@ -3720,10 +3720,10 @@ google-cdn-data@^0.1.6:
   resolved "https://registry.npmjs.org/google-cdn-data/-/google-cdn-data-0.1.25.tgz#9c3c3149ab18a7c2d5ed5f0f0b4ee8bc45992b71"
   integrity sha1-nDwxSasYp8LV7V8PC07ovEWZK3E=
 
-goqoo@^1.0.0-beta7:
-  version "1.0.0-beta7"
-  resolved "https://registry.npmjs.org/goqoo/-/goqoo-1.0.0-beta7.tgz#e1bbe83996477400c9fae297739fa2ca00c95849"
-  integrity sha512-BU/KN+TrlL7PGRR78NUBJQTHdq50h0IaZij8JU14Uneug7Ips4YnVpd8LwYFmh6tghjq1Ch/LmsJWtdT26YDAg==
+goqoo@^1.0.0-beta9:
+  version "1.0.0-beta9"
+  resolved "https://registry.yarnpkg.com/goqoo/-/goqoo-1.0.0-beta9.tgz#5fd0248f598c2aeed20e8ce2f460eab41a337545"
+  integrity sha512-MemNr9q53cs+ysDcMdvlr2H0e03gt9sq9Mx9Rw0LB6QTOcRWkFzHHabOtmOr40BuDnOn0tDjvykEpZhPEXp9eg==
   dependencies:
     "@babel/core" "^7.14.3"
     "@babel/preset-env" "^7.14.2"
@@ -3736,6 +3736,7 @@ goqoo@^1.0.0-beta7:
     caller "^1.0.1"
     chalk "^4.1.2"
     change-case "^4.1.2"
+    core-js "^3.16.2"
     cosmiconfig "^7.0.0"
     css-loader "^5.2.4"
     dotenv "^10.0.0"
@@ -3743,6 +3744,7 @@ goqoo@^1.0.0-beta7:
     fs-extra "^9.1.0"
     html-loader "^2.1.2"
     js-yaml "^4.0.0"
+    luxon "^2.0.2"
     minimist "^1.2.5"
     mustache "^4.2.0"
     netrc-parser "^3.1.6"
@@ -4923,6 +4925,11 @@ luxon@^2.0.1:
   version "2.0.1"
   resolved "https://registry.npmjs.org/luxon/-/luxon-2.0.1.tgz#b41ca2f1f5ad8099c18603ae6c36a7794039daf0"
   integrity sha512-8Eawf81c9ZlQj62W3eq4mp+C7SAIAnmaS7ZuEAiX503YMcn+0C1JnMQRtfaQj6B5qTZLgHv0F4H5WabBCvi1fw==
+
+luxon@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-2.0.2.tgz#11f2cd4a11655fdf92e076b5782d7ede5bcdd133"
+  integrity sha512-ZRioYLCgRHrtTORaZX1mx+jtxKtKuI5ZDvHNAmqpUzGqSrR+tL4FVLn/CUGMA3h0+AKD1MAxGI5GnCqR5txNqg==
 
 make-dir@^3.0.0, make-dir@^3.0.2, make-dir@^3.1.0:
   version "3.1.0"
