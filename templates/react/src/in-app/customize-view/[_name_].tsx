@@ -1,6 +1,5 @@
 import { helloGoqoo } from 'goqoo'
 import { KintoneRestAPIClient } from '@kintone/rest-api-client'
-import { SmallLogo } from 'img'
 import type { IndexEvent } from 'types'
 
 import React from 'react'
