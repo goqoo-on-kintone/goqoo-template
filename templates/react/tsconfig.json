@@ -2,15 +2,16 @@
   "compilerOptions": {
     "target": "ESNEXT",
     "module": "commonjs",
-    "outDir": "./dist",
+    "allowJs": true,
     "jsx": "react",
+    "sourceMap": true,
+    "outDir": "./dist",
+
     "strict": true,
     "baseUrl": "src",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "sourceMap": true,
-    "allowJs": true
+    "forceConsistentCasingInFileNames": true
   },
   "files": ["./node_modules/@kintone/dts-gen/kintone.d.ts"],
   "include": ["src/**/*", "dts/*"],
