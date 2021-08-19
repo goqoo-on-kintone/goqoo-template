@@ -22,7 +22,7 @@ kintone.events.on('app.record.index.show', async (event: IndexEvent<any /* kinto
   const fieldCodes = /*%& fieldCodes %*/ /*% */ ['案件名', 'プラン費用', 'オプション費用', '詳細'] /* %*/
   const fields = fieldCodes.map((code) => ({ code, label: properties[code].label }))
   const records = event.records.map((record) =>
-    Object.fromEntries(fieldCodes.map((code) => [code, record[code].value]))
+    Object.fromEntries(fieldCodes.map((code) => [code, record[code]]))
   )
 
   divNode.insertAdjacentHTML('beforeend', HTML_TEMPLATE)

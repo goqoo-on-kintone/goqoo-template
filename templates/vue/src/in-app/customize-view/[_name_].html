@@ -16,7 +16,7 @@
         <tbody>
           <tr v-for="record in records">
             <td v-for="field in fields">
-              <input class="form-control" type="text" v-model:text="record[field.code]" />
+              <input class="form-control" type="text" v-model:text="record[field.code].value" />
             </td>
           </tr>
         </tbody>
