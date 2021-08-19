@@ -25,7 +25,7 @@ kintone.events.on('app.record.index.show', async (event: IndexEvent<any /* kinto
   const client = new KintoneRestAPIClient()
   const { properties } = await client.app.getFormFields({ app: kintone.app.getId() as number })
 
-  const fieldCodes = /*%& fieldCodes %*/ /*% */ ['会社名', '部署名', '担当者名', '郵便番号', 'TEL'] /* %*/
+  const fieldCodes = /*%& fieldCodes %*/ /*% */ ['案件名', 'プラン費用', 'オプション費用', '詳細'] /* %*/
   const fields = fieldCodes.map((code) => ({ code, label: properties[code].label }))
   const records = event.records.map((record) =>
     Object.fromEntries(fieldCodes.map((code) => [code, record[code].value]))
