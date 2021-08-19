@@ -32,9 +32,7 @@ kintone.events.on('app.record.index.show', async (event: IndexEvent<any /* kinto
     el: '#customize-view-inner',
     data: { records },
     computed: {
-      fields() {
-        return fields
-      },
+      fields: () => fields,
     },
     methods: {
       async hello() {
