@@ -1,4 +1,4 @@
-import swal from 'sweetalert'
+import { helloGoqoo } from 'goqoo'
 import { KintoneRestAPIClient } from '@kintone/rest-api-client'
 import { SmallLogo } from 'img'
 import type { IndexEvent } from 'types'
@@ -11,11 +11,6 @@ kintone.events.on('app.record.index.show', async (event: IndexEvent<any /* kinto
   if (event.viewName !== 'カスタマイズビュー') {
     return
   }
-
-  swal({
-    text: 'Hello, Goqoo on kintone!',
-    icon: SmallLogo,
-  })
 
   // kintoneに設定済みのタグを自作のHTMLファイルで置換
   const divNode = document.querySelector('#customize-view')
@@ -30,11 +25,6 @@ kintone.events.on('app.record.index.show', async (event: IndexEvent<any /* kinto
     Object.fromEntries(fieldCodes.map((code) => [code, record[code].value]))
   )
 
-  const dummyAlert = (e: React.MouseEvent<HTMLButtonElement>) => {
-    const buttonName = e.currentTarget.innerHTML || e.currentTarget.value
-    swal(`「${buttonName}」ボタンはダミーです。`)
-  }
-
   const divNodeInner = document.createElement('div')
   divNode.appendChild(divNodeInner)
   ReactDOM.render(
@@ -42,10 +32,10 @@ kintone.events.on('app.record.index.show', async (event: IndexEvent<any /* kinto
       <div className="container-fluid">
         <div className="row">
           <div className="col">
-            <button className="btn btn-success" onClick={dummyAlert}>
-              Excelダウンロード
+            <button className="btn btn-warning" onClick={helloGoqoo}>
+              Hello
             </button>
-            <button className="btn btn-primary" onClick={dummyAlert}>
+            <button className="btn btn-primary" onClick={helloGoqoo}>
               全レコードを保存
             </button>
           </div>
