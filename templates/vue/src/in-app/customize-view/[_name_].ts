@@ -1,6 +1,5 @@
-import swal from 'sweetalert'
 import { KintoneRestAPIClient } from '@kintone/rest-api-client'
-import { SmallLogo } from 'img'
+import { helloGoqoo, confirmDialog, successDialog } from 'swal-customize'
 import type { IndexEvent } from 'types'
 
 import Vue from 'vue'
@@ -12,11 +11,6 @@ kintone.events.on('app.record.index.show', async (event: IndexEvent<any /* kinto
   if (event.viewName !== 'カスタマイズビュー') {
     return
   }
-
-  swal({
-    text: 'Hello, Goqoo on kintone!',
-    icon: SmallLogo,
-  })
 
   // kintoneに設定済みのタグを自作のHTMLファイルで置換
   const divNode = document.querySelector('#customize-view')
@@ -40,9 +34,14 @@ kintone.events.on('app.record.index.show', async (event: IndexEvent<any /* kinto
       fields,
     },
     methods: {
-      dummyAlert(e: any) {
-        const buttonName = e.target.innerHTML || e.target.value
-        swal(`「${buttonName}」ボタンはダミーです。`)
+      async saveAllRecords() {
+        if (!(await confirmDialog(`${this.records.length}件のレコードを保存します。よろしいですか？`))) return
+        await new Promise((resolve) => setTimeout(resolve, 3000))
+        await successDialog('完了しました。')
+        location.reload()
+      },
+      async hello() {
+        await helloGoqoo()
       },
     },
   })
