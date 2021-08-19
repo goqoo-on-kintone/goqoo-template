@@ -3690,10 +3690,10 @@ google-cdn-data@^0.1.6:
   resolved "https://registry.npmjs.org/google-cdn-data/-/google-cdn-data-0.1.25.tgz#9c3c3149ab18a7c2d5ed5f0f0b4ee8bc45992b71"
   integrity sha1-nDwxSasYp8LV7V8PC07ovEWZK3E=
 
-goqoo@^1.0.0-beta8:
-  version "1.0.0-beta8"
-  resolved "https://registry.npmjs.org/goqoo/-/goqoo-1.0.0-beta8.tgz#0977eaaca1ced8b3153ecead161334e913b27820"
-  integrity sha512-OLGqgrAqxOS5MlGNIPsltLVGfspDu9F9wvwfdOZrDXyyQ0XXr/7tGkce+22+la9FLWWZ5S6+0mqMPEMT06zVSg==
+goqoo@^1.0.0-beta9:
+  version "1.0.0-beta9"
+  resolved "https://registry.npmjs.org/goqoo/-/goqoo-1.0.0-beta9.tgz#5fd0248f598c2aeed20e8ce2f460eab41a337545"
+  integrity sha512-MemNr9q53cs+ysDcMdvlr2H0e03gt9sq9Mx9Rw0LB6QTOcRWkFzHHabOtmOr40BuDnOn0tDjvykEpZhPEXp9eg==
   dependencies:
     "@babel/core" "^7.14.3"
     "@babel/preset-env" "^7.14.2"
