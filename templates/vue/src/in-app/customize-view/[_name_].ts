@@ -28,9 +28,11 @@ kintone.events.on('app.record.index.show', async (event: IndexEvent<any /* kinto
   divNode.insertAdjacentHTML('beforeend', HTML_TEMPLATE)
   new Vue({
     el: '#customize-view-inner',
-    data: {
-      records,
-      fields,
+    data: { records },
+    computed: {
+      fields() {
+        return fields
+      },
     },
     methods: {
       async saveAllRecords() {
