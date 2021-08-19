@@ -1,5 +1,5 @@
 import { KintoneRestAPIClient } from '@kintone/rest-api-client'
-import { helloGoqoo, confirmDialog, successDialog, errorDialog } from 'swal-customize'
+import { helloGoqoo, confirmDialog, successDialog, errorDialog } from 'goqoo'
 import type { IndexEvent } from 'types'
 
 import Vue from 'vue'
