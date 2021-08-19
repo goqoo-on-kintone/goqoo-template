@@ -4,13 +4,13 @@
  * @typedef {'development' | 'staging' | 'production'} Env
  *
  * @typedef {{
- *  'project': number
- *  'customer': number
- *  'sales-activity': number
+ *  project: number
+ *  customer: number
+ *  sales_activity: number
  * }} AppId
  *
  * @typedef {{
- *  'sales-activity'?: string
+ *  sales_activity: string
  * }} ApiToken
  */
 
@@ -29,18 +29,24 @@ const config = {
       env: 'development',
       domain: 'the-red.cybozu.com',
       appId: {
-        'project': 148,
-        'customer': 149,
-        'sales-activity': 150,
+        project: 148,
+        customer: 149,
+        sales_activity: 150,
+      },
+      viewId: {
+        project: {
+          案件一覧: 2059,
+          カスタマイズビュー: 5526168,
+        },
       },
     },
     {
       env: 'staging',
       domain: 'the-red.cybozu.com',
       appId: {
-        'project': 169,
-        'customer': 170,
-        'sales-activity': 171,
+        project: 169,
+        customer: 170,
+        sales_activity: 171,
       },
       guest: 34,
     },
@@ -48,13 +54,13 @@ const config = {
       env: 'production',
       domain: 'the-red.cybozu.com',
       appId: {
-        'project': 175,
-        'customer': 176,
-        'sales-activity': 177,
+        project: 175,
+        customer: 176,
+        sales_activity: 177,
       },
-      apiToken: {
-        // 'sales-activity': process.env.API_TOKEN_SALES_ACTIVITY_PRODUCTION,
-      },
+      // apiToken: {
+      //   sales_activity: process.env.API_TOKEN_SALES_ACTIVITY_PRODUCTION,
+      // },
     },
   ],
 }
