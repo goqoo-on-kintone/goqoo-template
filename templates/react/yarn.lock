@@ -2969,10 +2969,10 @@ escodegen@^1.8.1:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-goqoo@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-goqoo/-/eslint-config-goqoo-0.1.0.tgz#fcb13d0e6a2c93e11833c78f95aa516312738ce9"
-  integrity sha512-B9Oey7H9gBX6WbGN8sjMBEq3uaExkdH8ntsy1rfqhD61WSBEPo2TNuJpEZAob2dz5yrGMzZ8OX2Pb46ytJkUlQ==
+eslint-config-goqoo@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-goqoo/-/eslint-config-goqoo-0.1.1.tgz#8d413eab743b181e8d19ece6c75338e1f05e03fb"
+  integrity sha512-xSXi3Yk+1uUt/KUZrwecg1wVyReCVsrNH8VyUWgFtIZ3y2Gj/acbzkmZaPBBQrYnkQcvDlwSsTq64ydVDHoCPg==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^5.7.0"
     "@typescript-eslint/parser" "^5.7.0"
