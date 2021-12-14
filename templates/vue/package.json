@@ -25,7 +25,7 @@
     "@types/prettier": "^2.3.2",
     "babel-eslint": "^10.0.1",
     "eslint": "^8.4.0",
-    "eslint-config-goqoo": "^0.1.1",
+    "eslint-config-goqoo": "^0.1.2",
     "ginue": "^3.0.0-beta7",
     "prettier": "^2.3.2",
     "typesync": "^0.8.0"

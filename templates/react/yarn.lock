@@ -2969,16 +2969,15 @@ escodegen@^1.8.1:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-goqoo@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-goqoo/-/eslint-config-goqoo-0.1.1.tgz#8d413eab743b181e8d19ece6c75338e1f05e03fb"
-  integrity sha512-xSXi3Yk+1uUt/KUZrwecg1wVyReCVsrNH8VyUWgFtIZ3y2Gj/acbzkmZaPBBQrYnkQcvDlwSsTq64ydVDHoCPg==
+eslint-config-goqoo@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/eslint-config-goqoo/-/eslint-config-goqoo-0.1.2.tgz#0cd31fd5422b61393fe23f0e4252aa57df6726dc"
+  integrity sha512-LQ5bIagGy21qk7xsgs7Hn8aICqfo+iFKKS0+7tRnbp3ppJVPWxyIFIeGxs9hRGtYQF2m5ylL+uoNcEcFwoiE0w==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^5.7.0"
     "@typescript-eslint/parser" "^5.7.0"
     eslint-config-prettier "^8.3.0"
     eslint-plugin-jest "^25.3.0"
-    typescript "^4.5.4"
 
 eslint-config-prettier@^8.3.0:
   version "8.3.0"
@@ -7363,11 +7362,6 @@ typescript@^4.3.5:
   version "4.3.5"
   resolved "https://registry.npmjs.org/typescript/-/typescript-4.3.5.tgz#4d1c37cc16e893973c45a06886b7113234f119f4"
   integrity sha512-DqQgihaQ9cUrskJo9kIyW/+g0Vxsk8cDtZ52a3NGh0YNTfpUSArXSohyUGnvbPazEPLu398C0UxmKSOrPumUzA==
-
-typescript@^4.5.4:
-  version "4.5.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.5.4.tgz#a17d3a0263bf5c8723b9c52f43c5084edf13c2e8"
-  integrity sha512-VgYs2A2QIRuGphtzFV7aQJduJ2gyfTljngLzjpfW9FoYZF6xuw1W0vW9ghCKLfcWrCFxK81CSGRAvS1pn4fIUg==
 
 typesync@^0.8.0:
   version "0.8.0"
