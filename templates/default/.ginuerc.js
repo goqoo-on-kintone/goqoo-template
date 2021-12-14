@@ -1,6 +1,5 @@
-require('ts-node').register({ typeCheck: false, transpileOnly: true })
-const { default: config } = require('./goqoo.config.ts')
 require('dotenv').config()
+const config = require('./goqoo.config')
 
 module.exports = {
   location: 'kintone-settings',
