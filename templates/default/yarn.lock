@@ -3709,7 +3709,7 @@ google-cdn-data@^0.1.6:
   resolved "https://registry.npmjs.org/google-cdn-data/-/google-cdn-data-0.1.25.tgz#9c3c3149ab18a7c2d5ed5f0f0b4ee8bc45992b71"
   integrity sha1-nDwxSasYp8LV7V8PC07ovEWZK3E=
 
-goqoo@^1.0.0-beta11:
+goqoo@^1.0.0-beta9018:
   version "1.0.0-beta9018"
   resolved "https://registry.yarnpkg.com/goqoo/-/goqoo-1.0.0-beta9018.tgz#22d05fc83884457b4d96924e82393a6efe97b1da"
   integrity sha512-zS8ECX/H+YOt/mZjIKZAWHVfa9hGJcwnv8K4Ua516O7MhvaMd5wEjQgS+apUdT+0EBo+D4aXEA0F7dWiL2zZRQ==
