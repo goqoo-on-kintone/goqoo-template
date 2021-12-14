@@ -10,6 +10,8 @@
     "build:s3": "goqoo build -- --env S3",
     "watch:s3": "goqoo watch -- --env S3",
     "release:s3": "goqoo release -- --env S3",
+    "generate": "goqoo generate",
+    "g": "goqoo g",
     "prettier": "prettier --write \"src/**/*.{js,ts,jsx,tsx,vue,json}\"",
     "eslint": "eslint --fix \"src/**/*.{js,ts,jsx,tsx,vue}\"",
     "preinstall": "typesync || true"
