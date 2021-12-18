@@ -1,3 +1,5 @@
+import type { Config as _Config } from '../../../goqoo/dist/lib/types'
+
 export type Env = 'development' | 'staging' | 'production'
 
 export type AppId = {
@@ -21,8 +23,4 @@ export type Context = {
   guest?: number
 }
 
-export type Config = {
-  bundlerType: 'default' | 'react' | 'vue'
-  dtsGen: { env: Env; skip?: string[] }
-  environments: Context[]
-}
+export type Config = _Config<Env, Context>
