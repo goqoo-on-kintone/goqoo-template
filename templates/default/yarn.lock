@@ -3596,10 +3596,10 @@ google-cdn-data@^0.1.6:
   resolved "https://registry.yarnpkg.com/google-cdn-data/-/google-cdn-data-0.1.25.tgz#9c3c3149ab18a7c2d5ed5f0f0b4ee8bc45992b71"
   integrity sha1-nDwxSasYp8LV7V8PC07ovEWZK3E=
 
-goqoo@^1.0.0-beta9019:
-  version "1.0.0-beta9019"
-  resolved "https://registry.yarnpkg.com/goqoo/-/goqoo-1.0.0-beta9019.tgz#9bf21a1f95685d2513c6b561e64fb19872ff4f36"
-  integrity sha512-HE/bZPuwkNEYEv84vmZQrtREBvK5ZWydS3uaUJfRy3DX0rZudOg1/9V5ZD4oHMENOzXGLzgTssVkD/R7VPMqZg==
+goqoo@^1.0.0-beta9020:
+  version "1.0.0-beta9020"
+  resolved "https://registry.yarnpkg.com/goqoo/-/goqoo-1.0.0-beta9020.tgz#106724a44960ef604a7172f59231968619573c50"
+  integrity sha512-sklI0EZnkAvvajFSsAmKe0w67EHHSYYHSWNV3zmbW5dgQclm0zd++VjZNkjYLWtO3YEIBkF0vv03UqylS0HCzg==
   dependencies:
     "@babel/core" "^7.14.3"
     "@babel/preset-env" "^7.14.2"
