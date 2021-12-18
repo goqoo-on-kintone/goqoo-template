@@ -1,6 +1,8 @@
 # Goqoo
 dist/
 tmp/
+yarn.lock
+package-lock.json
 
 # Mac
 .DS_Store
