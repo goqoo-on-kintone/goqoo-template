@@ -1,4 +1,4 @@
-import type { Config as _Config } from '../../../goqoo/dist/lib/types'
+import type { Config as _Config } from 'goqoo'
 
 export type Env = 'development' | 'staging' | 'production'
 
