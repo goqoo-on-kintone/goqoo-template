@@ -8,19 +8,10 @@ export type AppId = {
   sales_activity: number // 活動履歴
 }
 
-export type ViewId = {
-  project: {
-    案件一覧: number
-    カスタマイズビュー: number
-  }
-}
-
 export type Context = {
   env: Env
   host: string
   appId: AppId
-  viewId?: ViewId
-  guest?: number
 }
 
 export type Config = _Config<Env, Context>

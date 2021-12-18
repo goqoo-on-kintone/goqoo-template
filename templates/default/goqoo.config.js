@@ -18,12 +18,6 @@ const config = {
         customer: 149,
         sales_activity: 150,
       },
-      viewId: {
-        project: {
-          案件一覧: 2059,
-          カスタマイズビュー: 5526168,
-        },
-      },
     },
     {
       env: 'staging',
@@ -33,7 +27,6 @@ const config = {
         customer: 170,
         sales_activity: 171,
       },
-      guest: 34,
     },
     {
       env: 'production',
