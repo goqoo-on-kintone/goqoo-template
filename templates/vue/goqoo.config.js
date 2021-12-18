@@ -12,31 +12,23 @@ const config = {
   environments: [
     {
       env: 'development',
-      host: 'the-red.cybozu.com',
+      host: 'example.cybozu.com',
       appId: {
-        project: 148,
-        customer: 149,
-        sales_activity: 150,
+        project: 0,
+        customer: 0,
+        sales_activity: 0,
       },
     },
-    {
-      env: 'staging',
-      host: 'the-red.cybozu.com',
-      appId: {
-        project: 169,
-        customer: 170,
-        sales_activity: 171,
-      },
-    },
-    {
-      env: 'production',
-      host: 'the-red.cybozu.com',
-      appId: {
-        project: 175,
-        customer: 176,
-        sales_activity: 177,
-      },
-    },
+    // {
+    //   env: 'staging',
+    //   host: '...',
+    //   appId: { ... },
+    // },
+    // {
+    //   env: 'production',
+    //   host: '...',
+    //   appId: { ... },
+    // },
   ],
 }
 module.exports = config

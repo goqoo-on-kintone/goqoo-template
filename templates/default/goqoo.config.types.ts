@@ -1,6 +1,6 @@
 import type { Config as _Config } from 'goqoo'
 
-export type Env = 'development' | 'staging' | 'production'
+export type Env = 'development' // | 'staging' | 'production'
 
 export type AppId = {
   project: number // 案件管理
