@@ -1,0 +1,1 @@
+../default/goqoo.config.types.ts

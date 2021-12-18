@@ -1,3 +1,1 @@
-# <%= name %>
-
-<%= description %>
+../default/README.md
