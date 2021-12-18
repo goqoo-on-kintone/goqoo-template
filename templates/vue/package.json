@@ -12,6 +12,7 @@
     "release:s3": "goqoo release -- --env S3",
     "generate": "goqoo generate",
     "g": "goqoo g",
+    "test": "jest",
     "prettier": "prettier --write \"src/**/*.{js,ts,jsx,tsx,vue,json}\"",
     "eslint": "eslint --fix \"src/**/*.{js,ts,jsx,tsx,vue}\"",
     "preinstall": "typesync || true"
@@ -21,14 +22,18 @@
   "devDependencies": {
     "@types/bootstrap": "^5.1.0",
     "@types/eslint": "^7.28.0",
+    "@types/jest": "^27.0.3",
     "@types/luxon": "^1.27.1",
     "@types/prettier": "^2.3.2",
     "eslint": "^8.4.0",
-    "eslint-config-goqoo": "^0.1.2",
+    "eslint-config-goqoo": "^0.2.0",
+    "jest": "^27.4.5",
     "prettier": "^2.3.2",
+    "ts-jest": "^27.1.2",
     "typesync": "^0.8.0"
   },
   "dependencies": {
+    "@holiday-jp/holiday_jp": "^2.3.0",
     "@kintone/rest-api-client": "^2.0.15",
     "bootstrap": "^5.1.0",
     "goqoo": "^1.0.0-beta9020",
