@@ -56,7 +56,7 @@ kintone.events.on('app.record.index.show', async (event: IndexEvent<any /* kinto
           await successDialog('完了しました。')
           location.reload()
         } catch (e) {
-          errorDialog(e)
+          errorDialog(e as Error)
         }
       },
     },
