@@ -28,7 +28,7 @@
     "@types/react": "^17.0.15",
     "@types/react-dom": "^17.0.9",
     "eslint": "^8.4.0",
-    "eslint-config-goqoo": "^0.2.0",
+    "eslint-config-goqoo": "^1.0.0",
     "jest": "^27.4.5",
     "prettier": "^2.3.2",
     "ts-jest": "^27.1.2",
